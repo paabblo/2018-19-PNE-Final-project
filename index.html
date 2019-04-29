@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	
+</head>
+<body>
+	<div>
+		<h3>List Species:</h3>
+		<label>
+			Enter the limit:
+		</label>
+		<input type="text" name="limit" id="limit">
+		<button id="specieButton">Go</button>
+		<script type="text/javascript">			
+			document.getElementById('specieButton').onclick=function(){
+				var limit=document.getElementById('limit').value
+				location.href='/listSpecies/limit='+limit
+			}
+		</script>
+	</div>
+	<div>
+		<h3>Karyotype:</h3>
+		<label>
+			Enter the specie:
+		</label>
+		<input type="text" name="specie" id="karyotypeSpecie">
+		<button id="karyotypeButton">Go</button>
+		<script type="text/javascript">
+		
+		document.getElementById('karyotypeButton').onclick=function(){
+			var specie=document.getElementById('karyotypeSpecie').value
+			location.href='/karyotype/specie='+specie
+		}
+		</script>
+	</div>
+
+	<div>
+		<h3>Chromosome Length:</h3>
+		<label>
+			Enter the specie:
+		</label>
+		<input type="text" name="specie" id="clSpecie">
+
+
+		<span>
+		<label>
+			Enter the chromo:
+		</label>
+		<input type="text" name="specie" id="chromoName">
+		</span>
+		<button id="clButton">Go</button>
+		<script type="text/javascript">
+		document.getElementById('clButton').onclick=function(){
+			var clSpecie=document.getElementById("clSpecie").value
+			var chromoName=document.getElementById("chromoName").value
+			location.href='/chromosomeLength/specie='+clSpecie+'/chromo='+chromoName
+		}
+		</script>
+	</div>
+
+
+
+</body>
+
