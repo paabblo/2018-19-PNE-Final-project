@@ -1,0 +1,22 @@
+In order to run this application you will first have to install the flask package, if not it won't work.
+
+you can run the file using command:
+python3 server.py
+
+valid routes:
+Main form:
+->http://localhost:8000/
+
+To list all species:
+-> http://localhost:8000/listSpecies
+
+To list all species with an optional parameter:
+->http://localhost:8000/listSpecies/limit=10
+
+To list karyotype of the given specie:
+->http://localhost:8000/karyotype/specie=mouse
+
+To get the info of give chromosome name of the given specie:
+->http://localhost:8000/chromosomeLength/specie=mouse/chromo=18
+
+
